@@ -1,0 +1,9 @@
+{
+  "task": "Create and save a TSV file",
+  "application": "TextEdit",
+  "steps": [
+    {"action":"open_application","target":"TextEdit"},
+    {"action":"type","text":"col1\tcol2"},
+    {"action":"save_file","filename":"table.tsv","folder":"Documents"}
+  ]
+}

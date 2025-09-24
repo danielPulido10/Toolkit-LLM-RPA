@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "task": { "type": "string" },
+    "application": { "type": ["string", "null"] },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": { "type": "string" },
+          "target": { "type": ["string", "null"] },
+          "text": { "type": ["string", "null"] },
+          "keys": { "type": ["array", "null"], "items": { "type": "string" } },
+          "filename": { "type": ["string", "null"] },
+          "folder": { "type": ["string", "null"] },
+          "timeout_ms": { "type": ["integer", "null"] },
+          "key": { "type": ["string", "null"] },
+          "application": { "type": ["string", "null"] },
+          "src_folder": { "type": ["string", "null"] },
+          "dst_folder": { "type": ["string", "null"] },
+          "new_name": { "type": ["string", "null"] }
+        },
+        "required": ["action"]
+      }
+    }
+  },
+  "required": ["task", "steps"]
+}
